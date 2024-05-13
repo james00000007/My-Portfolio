@@ -136,11 +136,4 @@ a:hover {
   height: 150px;
   margin-bottom: 20px;
 }
-
-@media screen and (max-width: 576px) {
-  .logo {
-    width: 100px;
-    height: 100px;
-    margin-bottom: 10px;
-  }
 }
