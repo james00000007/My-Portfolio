@@ -1,52 +1,148 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>ፚ Ꭷ Ꮢ Ꭷ ❥'s Portfolio</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      background-color: #000;
-    }
-
-    p {
-      position: relative;
-      font-family: sans-serif;
-      text-transform: uppercase;
-      font-size: 50px;
-      letter-spacing: 4px;
-      overflow: hidden;
-      background: linear-gradient(90deg, #000, #fff, #000);
-      background-repeat: no-repeat;
-      background-size: 80%;
-      animation: animate 3s linear infinite;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: rgba(255, 255, 255, 0);
-    }
-
-    @keyframes animate {
-      0% {
-        background-position: -500%;
-      }
-      100% {
-        background-position: 500%;
-      }
-    }
-  </style>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>ፚ Ꭷ Ꮢ Ꭷ ❥ | ABOUT ME</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+        body {
+            background-color: #000000;
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        .top_text {
+            color: #0dff00;
+            text-align: center;
+            padding: 15px 30px;
+            border: 2px solid #26fc05;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 0 20px rgba(13, 255, 0, 0.5);
+            transition: background-color 0.3s;
+            font-size: 24px;
+            font-weight: 700;
+        }
+        .top_text:hover {
+            background-color: rgba(13, 255, 0, 0.1);
+            box-shadow: 0 0 30px rgba(13, 255, 0, 1);
+        }
+        .main_image {
+            margin: 20px 0;
+        }
+        .logo {
+            width: 150px;
+            height: 150px;
+            border: 3px solid #0dff00;
+            border-radius: 50%;
+            box-shadow: 0 0 20px rgba(13, 255, 0, 0.5);
+            transition: transform 0.3s;
+        }
+        .logo:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 30px rgba(13, 255, 0, 1);
+        }
+        .main_box {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        .box {
+            background-color: #1e1e1e;
+            border-radius: 8px;
+            padding: 20px;
+            border: 2px solid #0dff00;
+            width: 300px;
+            box-shadow: 0 0 20px rgba(13, 255, 0, 0.5);
+            transition: transform 0.3s;
+        }
+        .box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 30px rgba(13, 255, 0, 1);
+        }
+        .my_information {
+            margin-bottom: 15px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 20px;
+            color: #0dff00;
+        }
+        h4 {
+            color: #0dff00;
+            margin: 10px 0;
+            font-weight: 400;
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+        }
+        .info_value {
+            color: #ffffff;
+            margin-left: 10px;
+            font-weight: 300;
+        }
+        .click_here {
+            color: red;
+            text-decoration: none;
+        }
+        .social_links {
+            margin-top: 10px;
+            text-align: center;
+        }
+        .social_icon {
+            width: 50px;
+            height: 50px;
+            margin-right: 15px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            outline: none;
+        }
+        .social_icon:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 20px rgba(13, 255, 0, 0.5);
+        }
+    </style>
 </head>
 <body>
-  <p>ፚ Ꭷ Ꮢ Ꭷ ❥ | #Free_Palestine</p>
-
-  <script>
-
-    setTimeout(function() {
-      window.location.href = "1/index.html"; 
-    }, 5000);
-  </script>
+    <h3 class="top_text">ፚ Ꭷ Ꮢ Ꭷ ❥ | ABOUT ME</h3>
+    <div class="main_image">
+        <img src="https://i.ibb.co/tswcnvr/101139382.png" alt="Photo" class="logo">
+    </div>
+    <div class="main_box">
+        <div class="box">
+            <h3 class="my_information">My Information:</h3>
+            <h4 class="bio">• Bio: <span class="info_value">A programmer and web developer focused on building efficient, user-friendly applications, with experience in both front-end and back-end technologies.</span></h4>
+            <h4 class="name">• Name: <span class="info_value">Ahmed</span></h4>
+            <h4 class="old">• Age: <span class="info_value">21</span></h4>
+            <h4 class="location">• From: <span class="info_value">Egypt 🇪🇬</span></h4>            
+            <h4 class="hobbies">• Hobbies: <span class="info_value">Coding, Gaming, Reading</span></h4>
+            <h4 class="occupation">• Occupation: <span class="info_value">Programmer & Web Developer</span></h4>
+            <h4 class="favorite_quote">• Favorite Quote: <span class="info_value">"Code is like humor. When you have to explain it, it’s bad."</span></h4>
+            <h4 class="prog">• Languages: <span class="info_value">Python, CSS, HTML, PHP, Java, JavaScript, C#, Ruby</span></h4>
+            <h4 class="skills">• Skills: <span class="info_value">Responsive Design, Web Services, Database Management, Version Control (Git)</span></h4>
+            <h4 class="email">• Email: <a href="mailto:ahmedvigo2003@gmail.com" class="click_here">Click here</a></h4>            
+            <h4 class="GitHub">• GitHub: <a class="click_here" href="https://github.com/zoro2045" target="_blank">Click here</a></h4>
+            <h4 class="Tg_Channel">• Tg Channel: <a class="click_here" href="https://t.me/infoGRX" target="_blank">Click here</a></h4>        
+            <h4 class="more_info">• For More Info: <a href="1/index.html" class="click_here">Click here</a></h4>                
+            <div class="social_links">
+                <h4>Social Media:</h4>
+                <a href="https://t.me/ZORO2045" target="_blank">
+                    <img class="social_icon" src="https://i.ibb.co/HCxmyxw/telegram-computer-icons-logo-instant-messaging-logo-telegram-149f8dbe78png97d8a550fd69b22ed27.png" alt="Telegram">
+                </a>
+                <a href="https://twitter.com/DEV_ZORO2045" target="_blank">
+                    <img class="social_icon" src="https://i.ibb.co/Tvrtv2M/icon-logo-clip-art-twitter-logo-png-3c6fcbb7223bf806429c35aa91b0fe7a.png" alt="Twitter">
+                </a>
+                <a href="https://wa.link/ygzugk" target="_blank">
+                    <img class="social_icon" src="https://i.ibb.co/RhD9hqV/whatsapp-computer-icons-android-whatsapp-54b7e1d946ca8e033b8ac82ece86fa91.png" alt="WhatsApp">
+                </a>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
